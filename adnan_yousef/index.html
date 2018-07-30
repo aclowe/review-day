@@ -8,7 +8,6 @@
         crossorigin="anonymous">
 
     <style>
-
         body {
             text-align: center;
             margin: 0 auto;
@@ -22,8 +21,7 @@
         #blanks {
             letter-spacing: 3px;
         }
-    
-    
+
     </style>
 </head>
 
@@ -33,7 +31,7 @@
     <header>
         <div class="jumbotron" id="jumbotron">
             <h1 class="display-3">Hangman</h1>
-            <p class="lead">Theme:</p>
+            <p class="lead">Theme: JavaScript!</p>
         </div>
     </header>
     <br>
@@ -56,31 +54,35 @@
                     Press any key to start!
                 </h2>
 
-                <p id="wins">Wins: 0</p>
+                <div id="wrapper">
+                    <p id="wins">Wins: 0</p>
 
-                <p id="losses">Losses: 0</p>
+                    <p id="losses">Losses: 0</p>
 
-                <p>Current word:</p>
+                    <p>Current word:</p>
 
-                <p id="blanks"></p>
+                    <p id="blanks"></p>
 
-                <p>Guesses remaining:
-                    <span id="guesses-remaining"></span>
-                </p>
+                    <p>Guesses remaining:
+                        <span id="guesses-remaining"></span>
+                    </p>
 
-                <p>Letters already guessed:</p>
-                <div id="letters-already-guessed">
-                    <!-- INTENTIONALLY LEFT BLANK -->
+                    <p>Letters already guessed:</p>
+                    <div id="letters-already-guessed">
+                        <!-- INTENTIONALLY LEFT BLANK -->
+                    </div>
                 </div>
-
-
+                <div class="row">
+                    <span id="message"></span>
+                </div>
             </div>
         </div>
 
     </div>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 
     <!-- Custom script -->
     <script src="script.js"></script>
