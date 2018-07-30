@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman with jQuery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #pic {
+            margin: 0 auto;
+            display: block;
+        }
+    
+    
+    </style>
+</head>
+
+<body>
+
+    <!-- Jumbotron -->
+    <header>
+        <div class="jumbotron" id="jumbotron">
+            <h1 class="display-3">Hangman</h1>
+            <p class="lead">Theme:</p>
+        </div>
+    </header>
+    <br>
+    <br>
+
+    <div class="container">
+
+        <!-- Picture and word -->
+        <div class="row">
+            <div class="col-4 text-center">
+                <img id="pic" src="http://placehold.it/200/200" alt="hangman!">
+                <div id="word-was">
+                    <!-- INTENTIONALLY LEFT BLANK -->
+                </div>
+            </div>
+
+            <!-- Main game area -->
+            <div class="col-8 text-center">
+                <h2 id="start">
+                    Press any key to start!
+                </h2>
+
+                <p id="wins">Wins: 0</p>
+
+                <p id="losses">Losses: 0</p>
+
+                <p>Current word:</p>
+
+                <p id="blanks"></p>
+
+                <p>Guesses remaining:
+                    <span id="guesses-remaining"></span>
+                </p>
+
+                <p>Letters already guessed:</p>
+                <div id="letters-already-guessed">
+                    <!-- INTENTIONALLY LEFT BLANK -->
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
